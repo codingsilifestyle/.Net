@@ -1,0 +1,183 @@
+body {
+    direction: rtl;
+}
+
+.fixed::before {
+    display: block;
+    content: '';
+    height: 80px;
+}
+
+.main {
+    background-size: cover;
+    height: 500px;
+}
+.a-main{
+  background-size: contain;
+  background-image: url(/img/office-supplies.jpg);
+  height: 350px;
+}
+.afectNav li{
+    position: relative;
+}
+.act::after
+{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    top: 41;
+    right: 0px;
+    transition:0.5s
+    /* background: */
+    /* linear-gradient(currentColor 0 0) 0    100%/var(--d, 0) 3px no-repeat,
+    linear-gradient(currentColor 0 0) 100% 100%/var(--d, 0) 3px no-repeat;
+  transition:0.5s; */
+}
+/* a:hover::after{
+
+    transition:0.5s;
+    content: "";
+    width: 100%;
+    height: 3px;
+    background-color: #fff;
+    position: absolute;
+    top: 40px;
+    right: 0px;
+} */
+.line::after {
+    position: absolute;
+    content: '';
+    width: 90%;
+    background-color: beige;
+    height: 2px;
+    right: 12px;
+    bottom: 290px;
+}
+.double-5 {
+    background:
+      linear-gradient(currentColor 0 0) 0    100%/var(--d, 0) 3px no-repeat,
+      linear-gradient(currentColor 0 0) 100% 100%/var(--d, 0) 3px no-repeat;
+    transition:0.5s;
+  }
+  
+  .double-5:hover {
+    --d: 51%;
+  }
+
+.sponsors {
+    font-size: 30px;
+    font-weight: 500;
+    font-stretch: wider;
+}
+
+header {
+    box-shadow: 1px 0px 4px rgb(5, 5, 5);
+}
+
+.icons {
+    position: absolute;
+    bottom: 9px;
+    left: 10px;
+    color: rgb(145, 141, 141);
+}
+.login{
+    position: absolute;
+    z-index: 999;
+    transform: translateY(-120%);
+    visibility: visible;
+    transition: transform 0.4s, top 0.4s;
+}
+.loginA{
+    visibility: visible;
+    position: fixed;
+    transform: translateY(0%);
+    transform: translateX(-120%);
+}
+.opacity{
+    opacity: 0.4;
+}
+@media (min-500px) {
+    .main {
+        height: auto;
+    }
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: black;
+  font-size: 15px;
+  padding: 8px 12px;
+  /* position: absolute; */
+  bottom: 8px;
+  width: auto;
+  text-align: center;
+  background-color: yellow;
+}
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: yellow;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
